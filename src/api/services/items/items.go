@@ -1,8 +1,8 @@
 package items
 
 import (
-    itemsDomain "github.com/mercadolibre/itacademy-myml/src/api/domain/items"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
+    itemsDomain "github.com/emikohmann/itacademy2018-myml/src/api/domain/items"
+    "github.com/emikohmann/itacademy2018-myml/src/api/util/apierrors"
 )
 
 func GetItemByID(itemID int64) (*itemsDomain.Item, *apierrors.ApiError) {

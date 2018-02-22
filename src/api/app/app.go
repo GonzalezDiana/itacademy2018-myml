@@ -1,12 +1,12 @@
 package app
 
 import (
+    addressesController "github.com/emikohmann/itacademy2018-myml/src/api/controllers/addresses"
+    itemsController "github.com/emikohmann/itacademy2018-myml/src/api/controllers/items"
+    ordersController "github.com/emikohmann/itacademy2018-myml/src/api/controllers/orders"
+    paymentsController "github.com/emikohmann/itacademy2018-myml/src/api/controllers/payments"
+    pingController "github.com/emikohmann/itacademy2018-myml/src/api/controllers/ping"
     "github.com/gin-gonic/gin"
-    addressesController "github.com/mercadolibre/itacademy-myml/src/api/controllers/addresses"
-    itemsController "github.com/mercadolibre/itacademy-myml/src/api/controllers/items"
-    ordersController "github.com/mercadolibre/itacademy-myml/src/api/controllers/orders"
-    paymentsController "github.com/mercadolibre/itacademy-myml/src/api/controllers/payments"
-    pingController "github.com/mercadolibre/itacademy-myml/src/api/controllers/ping"
 )
 
 func StartApp() {

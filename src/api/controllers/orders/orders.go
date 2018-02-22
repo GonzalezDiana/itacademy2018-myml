@@ -1,9 +1,9 @@
 package orders
 
 import (
+    ordersService "github.com/emikohmann/itacademy2018-myml/src/api/services/orders"
+    "github.com/emikohmann/itacademy2018-myml/src/api/util/apierrors"
     "github.com/gin-gonic/gin"
-    ordersService "github.com/mercadolibre/itacademy-myml/src/api/services/orders"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
     "net/http"
     "strconv"
 )

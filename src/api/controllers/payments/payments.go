@@ -1,9 +1,9 @@
 package payments
 
 import (
+    paymentsService "github.com/emikohmann/itacademy2018-myml/src/api/services/payments"
+    "github.com/emikohmann/itacademy2018-myml/src/api/util/apierrors"
     "github.com/gin-gonic/gin"
-    paymentsService "github.com/mercadolibre/itacademy-myml/src/api/services/payments"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
     "net/http"
     "strconv"
 )

@@ -1,9 +1,9 @@
 package items
 
 import (
+    itemsService "github.com/emikohmann/itacademy2018-myml/src/api/services/items"
+    "github.com/emikohmann/itacademy2018-myml/src/api/util/apierrors"
     "github.com/gin-gonic/gin"
-    itemsService "github.com/mercadolibre/itacademy-myml/src/api/services/items"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
     "net/http"
     "strconv"
 )

@@ -1,8 +1,8 @@
 package payments
 
 import (
-    paymentsDomain "github.com/mercadolibre/itacademy-myml/src/api/domain/payments"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
+    paymentsDomain "github.com/emikohmann/itacademy2018-myml/src/api/domain/payments"
+    "github.com/emikohmann/itacademy2018-myml/src/api/util/apierrors"
 )
 
 func GetPaymentByID(paymentID int64) (*paymentsDomain.Payment, *apierrors.ApiError) {

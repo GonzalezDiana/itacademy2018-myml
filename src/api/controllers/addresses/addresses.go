@@ -1,9 +1,9 @@
 package addresses
 
 import (
+    addressesService "github.com/emikohmann/itacademy2018-myml/src/api/services/addresses"
+    "github.com/emikohmann/itacademy2018-myml/src/api/util/apierrors"
     "github.com/gin-gonic/gin"
-    addressesService "github.com/mercadolibre/itacademy-myml/src/api/services/addresses"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
     "net/http"
     "strconv"
 )
