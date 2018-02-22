@@ -2,10 +2,10 @@ package items
 
 import (
     "github.com/gin-gonic/gin"
-    "strconv"
-    "net/http"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
     itemsService "github.com/mercadolibre/itacademy-myml/src/api/services/items"
+    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
+    "net/http"
+    "strconv"
 )
 
 func GetItemByID(c *gin.Context) {
@@ -13,7 +13,7 @@ func GetItemByID(c *gin.Context) {
     if err != nil {
         c.JSON(http.StatusBadRequest, apierrors.ApiError{
             StatusCode: http.StatusBadRequest,
-            Error: err.Error(),
+            Error:      err.Error(),
         })
         return
     }

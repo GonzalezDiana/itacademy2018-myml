@@ -2,10 +2,10 @@ package addresses
 
 import (
     "github.com/gin-gonic/gin"
-    "strconv"
-    "net/http"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
     addressesService "github.com/mercadolibre/itacademy-myml/src/api/services/addresses"
+    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
+    "net/http"
+    "strconv"
 )
 
 func GetAddressByID(c *gin.Context) {
@@ -13,7 +13,7 @@ func GetAddressByID(c *gin.Context) {
     if err != nil {
         c.JSON(http.StatusBadRequest, apierrors.ApiError{
             StatusCode: http.StatusBadRequest,
-            Error: err.Error(),
+            Error:      err.Error(),
         })
         return
     }

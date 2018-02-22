@@ -2,10 +2,10 @@ package payments
 
 import (
     "github.com/gin-gonic/gin"
-    "strconv"
-    "net/http"
-    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
     paymentsService "github.com/mercadolibre/itacademy-myml/src/api/services/payments"
+    "github.com/mercadolibre/itacademy-myml/src/api/util/apierrors"
+    "net/http"
+    "strconv"
 )
 
 func GetPaymentByID(c *gin.Context) {
@@ -13,7 +13,7 @@ func GetPaymentByID(c *gin.Context) {
     if err != nil {
         c.JSON(http.StatusBadRequest, apierrors.ApiError{
             StatusCode: http.StatusBadRequest,
-            Error: err.Error(),
+            Error:      err.Error(),
         })
         return
     }

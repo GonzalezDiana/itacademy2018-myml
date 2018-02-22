@@ -2,10 +2,10 @@ package app
 
 import (
     "github.com/gin-gonic/gin"
-    ordersController "github.com/mercadolibre/itacademy-myml/src/api/controllers/orders"
-    itemsController "github.com/mercadolibre/itacademy-myml/src/api/controllers/items"
-    paymentsController "github.com/mercadolibre/itacademy-myml/src/api/controllers/payments"
     addressesController "github.com/mercadolibre/itacademy-myml/src/api/controllers/addresses"
+    itemsController "github.com/mercadolibre/itacademy-myml/src/api/controllers/items"
+    ordersController "github.com/mercadolibre/itacademy-myml/src/api/controllers/orders"
+    paymentsController "github.com/mercadolibre/itacademy-myml/src/api/controllers/payments"
     pingController "github.com/mercadolibre/itacademy-myml/src/api/controllers/ping"
 )
 
