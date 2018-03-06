@@ -3,10 +3,19 @@ package items
 import (
     itemsDomain "github.com/emikohmann/itacademy2018-myml/src/api/domain/items"
     "github.com/emikohmann/itacademy2018-myml/src/api/util/apierrors"
+    "fmt"
 )
 
 func GetItemByID(itemID int64) (*itemsDomain.Item, *apierrors.ApiError) {
     return &itemsDomain.Item{
-        ItemID: itemID,
+        Id: itemID,
+        SiteId: "MLM",
+        Title: fmt.Sprintf("Item-%d", itemID),
+        CategoryId: fmt.Sprintf("%s%d", "MLM", itemID),
+        Price: 100,
+        CurrencyId: "MXN",
+        Quantity: 20,
+        Condition: "new",
+        Pictures: []string{fmt.Sprintf("img-11%d", itemID), fmt.Sprintf("img-22%d", itemID)},
     }, nil
 }

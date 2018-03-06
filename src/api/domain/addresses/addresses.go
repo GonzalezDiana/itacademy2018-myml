@@ -1,5 +1,8 @@
 package addresses
 
 type Address struct {
-    AddressID int64 `json:"address_id"`
+    Id 				int64  		`json:"id"`
+    StreetName		string		`json:"street_name"`
+    StreetNumber 	int32  		`json:"street_number"`
+    City 			string 		`json:"city"`
 }
