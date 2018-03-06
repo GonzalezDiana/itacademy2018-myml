@@ -16,5 +16,5 @@ func StartApp() {
     router.GET("/items/:itemID", itemsController.GetItemByID)
     router.GET("/payments/:paymentID", paymentsController.GetPaymentByID)
     router.GET("/addresses/:addressID", addressesController.GetAddressByID)
-    router.Run(":8080")
+    router.Run(":8081")
 }

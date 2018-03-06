@@ -7,9 +7,9 @@ import (
 
 func GetAddressByID(addressID int64) (*addressesDomain.Address, *apierrors.ApiError) {
     return &addressesDomain.Address{
-        Id: addressID,
-        StreetName: "Calle Falsa",
+        Id:           addressID,
+        StreetName:   "Calle Falsa",
         StreetNumber: 123,
-        City: "Springfield",
+        City:         "Springfield",
     }, nil
 }
